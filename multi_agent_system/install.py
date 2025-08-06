@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Installation script for Multi-Agent AI System
 """

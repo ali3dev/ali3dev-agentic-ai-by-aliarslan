@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Multi-Agent System Launcher
 Simple launcher for the multi-agent AI system

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Quick test to verify the system generates actual content
 """
