@@ -5,7 +5,7 @@ The agent can **understand natural language requests**, **search restaurants**, 
 
 
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 
 restaurant-booking-agent/
@@ -37,9 +37,9 @@ The **Restaurant Booking Agent** uses the **Agentic AI pattern**:
 5. **REFLECT** – Confirm success & guide to next step  
 
 
-## ⚙️ Functionalities
+# ⚙️ Functionalities
 
-### **1. User Preference Extraction** (`tools/user_preference.py`)
+# **1. User Preference Extraction** (`tools/user_preference.py`)
 - Extracts cuisine, location, party size, date, time, and special requests from text.
 - Validates missing info and asks follow-up questions.
 
@@ -54,7 +54,7 @@ Output: {
 }
 
 
-### **2. Restaurant Search** (`tools/restaurant_search.py`)
+# **2. Restaurant Search** (`tools/restaurant_search.py`)
 - Searches a simulated restaurant database by cuisine, location, price range, and party size.
 - Ranks results by match score and rating.
 
@@ -64,18 +64,16 @@ Search Params: {cuisine: "italian", location: "downtown", party_size: 4}
 Results: Top 6 matching restaurants.
 
 
-
-
-### **3. Availability Checker** (`tools/availability_checker.py`)
+# **3. Availability Checker** (`tools/availability_checker.py`)
 - Simulates **real-time availability** based on:
   - Popularity (rating)
   - Time of day (peak hours)
   - Party size
 - Suggests alternative time slots if unavailable.
 
----
 
-### **4. Booking Manager** (`tools/booking_manager.py`)
+
+# **4. Booking Manager** (`tools/booking_manager.py`)
 - Creates a confirmed booking record with:
   - Restaurant details
   - User details
@@ -83,9 +81,9 @@ Results: Top 6 matching restaurants.
   - Assigned table type
 - Stores bookings in memory for retrieval.
 
----
 
-### **5. Email Sender** (`tools/email_sender.py`)
+
+# **5. Email Sender** (`tools/email_sender.py`)
 - Sends a **professional confirmation email** to the user.
 - Includes:
   - Booking reference
@@ -93,18 +91,17 @@ Results: Top 6 matching restaurants.
   - Arrival instructions
   - Special requests (if any)
 
----
 
-### **6. Main Agent** (`agent/restaurant_agent.py`)
-- Orchestrates the **full conversation**:
+
+# **6. Main Agent** (`agent/restaurant_agent.py`)
+  - Orchestrates the **full conversation**:
   - **User Preference Tool → Restaurant Search → Availability Check → Booking Manager → Email Sender**
   - Uses **Google Gemini Pro** for **natural language understanding** and **conversation flow**.
   - Maintains conversation state between messages.
 
 
 
-## 🚀 Example Interaction
-
+# 🚀 Example Interaction
 
 You: Book an Italian restaurant for 2 people at 7 PM downtown today.
 Agent: I found 3 great Italian restaurants nearby...
@@ -113,8 +110,7 @@ You: 2
 Agent: Great choice! Checking availability...
        Your table is confirmed. Email sent to john@example.com.
 
-## 📦 Installation (Using uv)
-
+# 📦 Installation (Using uv)
 
 # Clone the repository
 git clone https://github.com/ali3dev/ali3dev-agentic-ai-by-aliarslan.git
