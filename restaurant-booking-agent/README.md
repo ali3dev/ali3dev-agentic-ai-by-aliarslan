@@ -1,11 +1,11 @@
-````markdown
+
 # 🍽️ Restaurant Booking Agent
 
 An **AI-powered restaurant reservation system** built with **Google Gemini Pro** and modular Python tools.  
 The agent can **understand natural language requests**, **search restaurants**, **check availability**, **book tables**, and **send confirmation emails** — all in a conversational, agentic flow.
 
----
 
+````markdown
 ## 📁 Project Structure
 ```bash
 restaurant-booking-agent/
@@ -168,11 +168,4 @@ uv pip install -r requirements.txt
 python test_system.py
 ```
 
-```
-
----
-
-If you put **this** in your repo’s `restaurant-booking-agent/README.md`, the folder tree will display perfectly in GitHub.  
-
-Do you want me to also **add emojis** for each tool so it looks more visually appealing? That makes it pop more on GitHub.
 ```
